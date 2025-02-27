@@ -158,7 +158,7 @@ main {
 }
 .card .thought {
   margin: 0 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -168,12 +168,12 @@ main {
   font-weight: 600;
 }
 .desiganation span:first-of-type {
-  font-size: 30px;
+  font-size: 25px;
 }
 .desiganation span:nth-of-type(2) {
   font-family: sans-serif;
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--alt-accent-color);
 }
 /* FOOTER */
@@ -187,7 +187,7 @@ footer {
 footer a {
   color: var(--alt-text-color);
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 footer a:hover {
@@ -200,6 +200,7 @@ footer a:hover {
 }
 footer h2 {
   margin-bottom: 10px;
+  font-size: 20px;
 }
 footer i {
   font-size: 28px;
@@ -221,7 +222,7 @@ footer i:hover {
   gap: 15px;
 }
 .icon i {
-  font-size: 40px;
+  font-size: 35px;
 }
 .map {
   box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.4);
