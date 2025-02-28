@@ -19,7 +19,7 @@
       <header>
         <div class="logo">
           <div class="school-logo">
-            <img src="IMAGE/logo.png" alt="school" width="90px" height="90px" />
+            <img src="IMAGE/logo.jpg" alt="school" width="90px" height="90px" />
             <div class="school-name">
               <p>Dazzle Future Academy Residential School</p>
               <p>Paduma,Manatu,Palamu-822113 (Jharkhand)</p>
@@ -37,9 +37,74 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </header>
+      <div class="form">
+        <div class="form-head">Your Response</div>
+        <ul>
+          <li>
+            <label for="name">Name :</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+          </li>
+          <li>
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+          </li>
+          <li>
+            <label for="subject">Subject :</label>
+            <input type="text" id="subject" placeholder="Subject" required>
+          </li>
+          <li>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+          </li>
+        </ul>
+        <button type="submit" id="submit-btn">Send Message</button>
+    </div>
+    
 
       <!-- footer -->
-      <footer></footer>
+      <footer>
+        <div class="contact">
+          <h2>CONTACT US</h2>
+          <ul>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/Wf3P6m1cLTAwFsDk9"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i> Paduma , Manatu</a
+              >
+            </li>
+            <li>
+              <a href="tel:+918340472330"
+                ><i class="fa-solid fa-phone"></i>+91 8340472330</a
+              >
+            </li>
+            <li>
+              <a href="mailto:@dfapaduma@gmial.com"
+                ><i class="fa-solid fa-envelope"></i> dfapaduma@gmial.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <h2>CONNECT WITH US</h2>
+          <div class="icon">
+            <a href="#" target="_blank"></a
+            ><i class="fa-brands fa-facebook"></i>
+            <a href="#" target="_blank"></a
+            ><i class="fa-brands fa-instagram"></i>
+            <a href="#" target="_blank"></a><i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="map">
+            <h3>Location</h3>
+          <iframe
+            width="200"
+            height="200"
+            style="border: 0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=84.344528,24.170111,84.346528,24.172111&layer=mapnik&marker=24.171111,84.345528""
+          >
+          </iframe>
+        </div>
+      </footer>
     </div>
     <audio src="SOUND/click.wav" id="clickSound"></audio>
     <script src="JS/script.js"></script>
