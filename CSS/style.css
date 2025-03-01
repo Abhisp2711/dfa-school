@@ -37,12 +37,12 @@ header {
   align-items: center;
 }
 .school-name p:first-of-type {
-  font-size: 30px;
+  font-size: 1.3rem;
   color: var(--text-color);
   font-weight: 550;
 }
 .school-name p:nth-of-type(2) {
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--primary-color);
   font-weight: 550;
   text-align: center;
@@ -55,21 +55,21 @@ header {
 .logo img {
   border-radius: 50%;
   margin: 0;
-  padding: 6px;
+  padding: 0.7rem;
 }
 
 /* Nav bar  */
 .nav-menu {
   background-color: var(--alt-background-color);
-  margin: 4px;
+  margin: 0.2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 0.6rem;
   align-items: center;
 }
 .nav-menu a {
-  font-size: 25px;
+  font-size: 1.1rem;
 }
 ul {
   list-style: none;
@@ -132,7 +132,7 @@ ul {
 /* main content */
 /* card */
 main {
-  margin: 10px 30px;
+  margin: 1.3rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
@@ -145,9 +145,9 @@ main {
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
 }
 .card img {
-  margin: 40px;
-  width: 200px;
-  height: 200px;
+  margin: 1.3rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 10%;
   border: 1px solid var(--text-color);
   transition: transform 0.3s ease;
@@ -156,23 +156,23 @@ main {
   transform: scale(1.04);
 }
 .card .thought {
-  margin: 0 30px;
-  font-size: 20px;
+  margin: 0 1.1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--text-color);
 }
 .desiganation {
-  margin: 20px;
+  margin: 1.1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
 }
 .desiganation span:first-of-type {
-  font-size: 25px;
+  font-size: 1.2rem;
 }
 .desiganation span:nth-of-type(2) {
   font-family: sans-serif;
   display: block;
-  font-size: 20px;
+  font-size: 0rem;
   color: var(--alt-accent-color);
 }
 /* FOOTER */
@@ -186,7 +186,7 @@ footer {
 footer a {
   color: var(--alt-text-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 footer a:hover {
@@ -199,11 +199,11 @@ footer a:hover {
 }
 footer h2 {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 footer i {
-  font-size: 20px;
+  font-size: 1.09rem;
   margin-right: 10px;
   margin-bottom: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -218,13 +218,17 @@ footer i:hover {
 .icon {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   gap: 15px;
 }
 .icon i {
-  font-size: 28px;
+  font-size: 1.4rem;
+}
+.icon i:hover {
+  transform: scale(1.08);
 }
 .map {
+  padding: 15px;
   box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -336,18 +340,18 @@ button:hover::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--alt-background-color);
+    background-color: var(--primary-color);
     position: fixed;
     top: 88px;
     right: -100%;
     width: 250px;
-    height: 100vh;
+    height: 400px;
     padding: 15px;
     border-radius: 5px;
     gap: 20px;
     z-index: 2;
 
-    transition: transform 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .nav-menu.active {
     right: 0;
@@ -364,7 +368,10 @@ button:hover::after {
   footer {
     flex-direction: column;
     gap: 10px;
-    align-items: center;
+  }
+  .icon {
+    flex-direction: row;
+    justify-content: start;
   }
 }
 
@@ -388,17 +395,17 @@ button:hover::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--alt-background-color);
+    background-color: var(--primary-color);
     position: fixed;
-    top: 75px;
+    bottom: 300px;
     right: -100%;
     width: 250px;
-    height: 100vh;
+    height: 400px;
     padding: 15px;
     border-radius: 5px;
     gap: 20px;
 
-    transition: transform 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .nav-menu.active {
     right: 0;
@@ -422,5 +429,9 @@ button:hover::after {
   footer {
     flex-direction: column;
     align-items: center;
+  }
+  .icon {
+    flex-direction: row;
+    justify-content: start;
   }
 }
