@@ -53,6 +53,14 @@ function checkContactSection() {
         startScrolling(); // Resume scrolling on other pages
     }
 }
+// Close menu if clicked outside
+document.addEventListener("click", (event) => {
+    if (!navMenu.contains(event.target) && !menu.contains(event.target)) {
+        navMenu.classList.remove("active");
+        menu.classList.remove("fa-times");
+        menu.classList.add("fa-bars");
+    }
+});
 
 // Detect page load and hash change
 window.addEventListener("load", checkContactSection);
